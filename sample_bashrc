@@ -1,0 +1,5 @@
+# sourcing tool
+
+# provisioning basic
+export SOURCING_TOOL_HOME=$HOME/dev
+source $SOURCING_TOOL_HOME/basic.sh
