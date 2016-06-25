@@ -11,7 +11,7 @@ for file in `ls $SOURCING_TOOL_HOME`; do
     fi
 done
 echo "*************************"
-echo -n "Please select env. default [basic.sh]: "
+echo -n "Please select env. Default [bootstrap.sh]: "
 read pref_env
 
 if [ -z "$pref_env" ]; then
