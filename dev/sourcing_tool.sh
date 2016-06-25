@@ -6,7 +6,7 @@ echo "OPTIONS:"
 echo "*************************"
 
 for file in `ls $SOURCING_TOOL_HOME`; do
-    if [ "$file" != "new_env.sh" -a "$file" != "sourcing_tool.sh" -a "$file" != "bootstrap.sh" ]; then
+    if [ "$file" != "new_env.sh" -a "$file" != "sourcing_tool.sh" -a "$file" != "sourcing_load_dependency.sh" -a "$file" != "bootstrap.sh" ]; then
         echo $file
     fi
 done
