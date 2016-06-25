@@ -9,7 +9,7 @@ Using a simple combination of (target bash file with export definition) and the 
 
 ## HOW TO USE
 
-# SIMPLE USE
+### SIMPLE USE
 1. Add the definition of sample_basrc to your bashrc.
 
 > export SOURCING_TOOL_HOME=$HOME/dev
@@ -37,10 +37,10 @@ You will see something like:
 
 The script will wait for you to type the name of the file. Use the full name, e.g. "my_new_env.sh".
 
-# DEPENDENCIES
+### DEPENDENCIES
 Assuming you have your brand new "my_new_env.sh" file. To add dependencies to my_new_env.sh so that it sources other env files you can use the `$SOURCING_DEP_TOOL`. Assuming we have env files named "tools.sh" and "libraries.sh", and we want to use them as dependencies in "my_new_env.sh". Then, you need to add the following line to "my_new_env.sh":
 
 > $SOURCING_DEP_TOOL tools.sh libraries.sh
 
-# TODO
+### TODO
 
