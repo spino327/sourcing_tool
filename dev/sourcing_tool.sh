@@ -1,4 +1,6 @@
 
+default="bootstrap.sh"
+
 echo
 echo "Sourcing user-defined environment."
 echo "*************************"
@@ -11,12 +13,14 @@ for file in `ls $SOURCING_TOOL_HOME`; do
     fi
 done
 echo "*************************"
-echo -n "Please select env. Default [bootstrap.sh]: "
+echo -n "Please select env. Default [$default]: "
 read pref_env
 
 if [ -z "$pref_env" ]; then
-    echo "Using default: "$SOURCING_TOOL_NAME
-elif [ -a $SOURCING_TOOL_HOME/$pref_env ]; then
+    echo "Using default: "$default
+    pref_env=$default
+fi
+if [ -a $SOURCING_TOOL_HOME/$pref_env ]; then
     echo Sourcing $SOURCING_TOOL_HOME/$pref_env
     source $SOURCING_TOOL_HOME/$pref_env
 else
