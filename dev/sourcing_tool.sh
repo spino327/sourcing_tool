@@ -1,5 +1,5 @@
 
-default="bootstrap.sh"
+default="basic.sh"
 
 echo
 echo "Sourcing user-defined environment."
