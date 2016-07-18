@@ -30,7 +30,7 @@ You will see something like:
 > *************************
 > OPTIONS:
 > *************************
-> 0 : basic.sh
+> 0 : basic.sh  
 > 1 : my_new_env.sh
 > *************************
 > Please select the number for the env. default [basic.sh]: 
