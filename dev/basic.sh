@@ -2,8 +2,6 @@
 # SAMPLE BASIC env                                                 #
 #############################################################
 
-export SOURCING_TOOL_NAME="$BASH_SOURCE"
-
 echo "Hello Master! this is $SOURCING_TOOL_NAME."
 
 #############

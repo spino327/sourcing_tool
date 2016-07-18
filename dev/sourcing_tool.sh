@@ -22,6 +22,7 @@ if [ -z "$pref_env" ]; then
 fi
 if [ -a $SOURCING_TOOL_HOME/$pref_env ]; then
     echo Sourcing $SOURCING_TOOL_HOME/$pref_env
+    export SOURCING_TOOL_NAME="echo $pref_env"
     source $SOURCING_TOOL_HOME/$pref_env
 else
     echo "$pref_env is not a valid env file. try again"
