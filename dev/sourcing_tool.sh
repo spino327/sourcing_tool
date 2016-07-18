@@ -20,13 +20,16 @@ echo "*************************"
 echo -n "Please select the number for the env. Default [$default]: "
 read pref_env
 
+if [ -z "$pref_env" ]; then
+    pref_env=-1
+fi
+
 # default
-if [ -z "$pref_env" -o "$pref_env" -lt "0" -o "$pref_env" -ge "${#OPTIONS[@]}" ]; then
+if [ "$pref_env" -lt "0" -o "$pref_env" -ge "${#OPTIONS[@]}" ]; then
     echo "Using default: "$default
     pref_env=$default
     export SOURCING_TOOL_NAME="echo $pref_env"
     source $SOURCING_TOOL_HOME/$pref_env
-
 else
     # loading selection
     pref_env=${OPTIONS[$pref_env]}
