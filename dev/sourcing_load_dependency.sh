@@ -14,7 +14,7 @@ else
     for dep in $DEPS; do
         if [ -a $SOURCING_TOOL_HOME/$dep ]; then
             echo Sourcing $SOURCING_TOOL_HOME/$dep
-            export SOURCING_TOOL_NAME=$SOURCING_TOOL_NAME " < $dep"
+            export SOURCING_TOOL_NAME="$SOURCING_TOOL_NAME < $dep"
             source $SOURCING_TOOL_HOME/$dep
         else
             echo "$dep is not a valid env file. Try again"
