@@ -30,12 +30,12 @@ You will see something like:
 > *************************
 > OPTIONS:
 > *************************
-> basic.sh
-> my_new_env.sh
+> 0 : basic.sh
+> 1 : my_new_env.sh
 > *************************
-> Please select env. default [basic.sh]: 
+> Please select the number for the env. default [basic.sh]: 
 
-The script will wait for you to type the name of the file. Use the full name, e.g. "my_new_env.sh".
+The script will wait for you to type the number of env file you'd like to source. Use just the number, e.g. "1" to load "my_new_env.sh".
 
 ### DEPENDENCIES
 Assuming you have your brand new "my_new_env.sh" file. To add dependencies to my_new_env.sh so that it sources other env files you can use the `$SOURCING_TOOL_DEP`. Assuming we have env files named "tools.sh" and "libraries.sh", and we want to use them as dependencies in "my_new_env.sh". Then, you need to add the following line to "my_new_env.sh":
