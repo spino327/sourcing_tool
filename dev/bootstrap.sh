@@ -2,7 +2,7 @@
 # bootstrap env                                                 #
 #############################################################
 
-export SOURCING_TOOL_NAME="echo bootstrap.sh"
+export SOURCING_TOOL_NAME="bootstrap.sh"
 
 echo "Hello Master! this is $SOURCING_TOOL_NAME."
 echo "Please run '> \$SOURCING_TOOL' to select your preferred env."

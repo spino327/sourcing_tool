@@ -11,6 +11,6 @@ fi
 
 NAME=$1.sh
 
-cp $SOURCING_TOOL_HOME/basic.sh $SOURCING_TOOL_HOME/$NAME
+cp $SOURCING_TOOL_HOME/template.sh $SOURCING_TOOL_HOME/$NAME
 
 echo "Please, modify $SOURCING_TOOL_HOME/$NAME and then call \$SOURCING_TOOL to source it"
