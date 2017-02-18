@@ -7,11 +7,24 @@ echo "*************************"
 echo "OPTIONS:"
 echo "*************************"
 
-
+IGNORE_LIST=(
+"new_env.sh"
+"sourcing_tool.sh"
+"sourcing_load_dependency.sh"
+"bootstrap.sh"
+"template.sh"
+)
 ITH=0
 OPTIONS=()
 for file in `ls $SOURCING_TOOL_HOME`; do
-    if [ "$file" != "new_env.sh" -a "$file" != "sourcing_tool.sh" -a "$file" != "sourcing_load_dependency.sh" -a "$file" != "bootstrap.sh" ]; then
+    status=1
+    for ignore in ${IGNORE_LIST[@]}; do
+        if [ "$file" == "$ignore" ]; then
+            status=0
+            break
+        fi
+    done
+    if [ $status == 1 ]; then
         echo "$ITH : $file"
         OPTIONS[$((ITH++))]=$file
     fi
