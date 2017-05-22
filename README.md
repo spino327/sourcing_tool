@@ -5,7 +5,7 @@ Simple bash-based tool to source user-defined environments
 Sometimes you need to use different libraries or applications, and potentially you need different versions of those. It can become a mess if you are working on different projects that use different versions of compilers/libraries/... One solution is to use tools like modules or valet, but I don't have time to configure a complex environment management software.
 
 ## Solution
-Using a simple combination of (target bash file with export definition) and the command source.
+Using a simple combination of (target bash file with export definition) and the `source` command.
 
 ## HOW TO USE
 
