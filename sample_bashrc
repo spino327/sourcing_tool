@@ -1,5 +1,8 @@
 # sourcing tool
-
-# provisioning basic
-export SOURCING_TOOL_HOME=$HOME/dev
-source $SOURCING_TOOL_HOME/bootstrap.sh
+if [[ $- == *i* ]]; then 
+    #(echo 'Interactive Mode' `date`) >> $HOME/sessions_log.txt
+    export SOURCING_TOOL_HOME=$HOME/dev
+    source $SOURCING_TOOL_HOME/bootstrap.sh
+# else
+    #(echo 'Not interactive' `date`) >> $HOME/sessions_log.txt
+fi
