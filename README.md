@@ -42,5 +42,8 @@ Assuming you have your brand new "my_new_env.sh" file. To add dependencies to my
 
 > $SOURCING_TOOL_DEP tools.sh libraries.sh
 
+## EXAMPLES  
+You can check to simple examples at the following gist https://gist.github.com/spino327/f0904a8f26a78e0bfbbe3c4816d83ea7.
+
 ### TODO
 
